@@ -1,9 +1,9 @@
 $(call inherit-product, device/lge/h811/full_h811.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Overlays (inherit after vendor/cm to ensure we override it)
+# Overlays (inherit after vendor/lineage to ensure we override it)
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_NAME := lineage_h811
